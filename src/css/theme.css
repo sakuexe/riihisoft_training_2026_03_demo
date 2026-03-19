@@ -13,7 +13,7 @@
     --spacing-7xl: calc(1rem * 16);
 
     --color-brand: oklch(0.73 30% 210);
-    /* --color-brand: oklch(0.7311 20% 147.06); */
+    /* --color-brand: oklch(0.7 25% 147); */
 
     /* @media (prefers-color-scheme: light) { } */
     --color-bg: oklch(from var(--color-brand) 98% calc(c * 0.08) h);
