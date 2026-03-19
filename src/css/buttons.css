@@ -16,9 +16,9 @@
 }
 
 .button.primary {
-    background-color: var(--color-brand);
-    color: currentColor;
+    color: var(--color-bg);
     text-decoration: none;
+    background-color: var(--color-brand);
 
     &:hover {
         background-color: var(--color-text);
@@ -28,7 +28,7 @@
 
 .button.secondary {
     background-color: var(--color-bg);
-    border: 1px solid var(--color-brand);
+    border: 1px solid var(--color-border);
     color: var(--color-brand);
     text-decoration: none;
     backdrop-filter: blur(15px);

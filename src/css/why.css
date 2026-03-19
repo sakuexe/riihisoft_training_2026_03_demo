@@ -1,0 +1,31 @@
+#why {
+    .explain {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .panel {
+        border: 1px solid var(--color-border);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-lg);
+        
+        &>*:not(:last-child) {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        &:hover {
+            background: var(--gradient-primary);
+        }
+    }
+
+    .panel h3 {
+        margin: 0;
+    }
+
+    .panel p,
+    .panel li,
+    .faq details p {
+        color: var(--color-text-muted);
+    }
+}

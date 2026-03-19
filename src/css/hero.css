@@ -1,0 +1,64 @@
+#hero {
+    padding: 5rem 0 4rem;
+    container: --hero / inline-size;
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+
+    @container (width > 700px) {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 0.35rem 0.75rem;
+        border: 1px solid var(--color-border);
+        border-radius: var(--border-radius);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        line-height: 1.05;
+        margin: 0 0 1rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: var(--color-text-muted);
+        max-width: 62ch;
+        margin: 0 0 1.5rem;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+    }
+
+    .hero-card {
+        background: var(--gradient-primary);
+        border: 1px solid var(--color-border);
+        border-radius: var(--border-radius);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-lg);
+        box-shadow: 0 10px 40px oklch(from var(--color-brand) 0.01 c h / 0.5);
+    }
+
+    .sock-visual {
+        --circle-1: oklch(from var(--color-brand) l c h / 0.2);
+        --circle-2: oklch(from var(--color-brand) l c calc(h + 60) / 0.4);
+
+        min-height: 340px;
+        border: 1px solid var(--color-border);
+        border-radius: calc(var(--border-radius) - var(--spacing-md));
+        background:
+            radial-gradient(circle at 30% 20%, var(--circle-1), transparent 50%),
+            radial-gradient(circle at 100% 100%, var(--circle-2), transparent 60%),
+            var(--color-bg);
+        display: grid;
+        place-items: center;
+        font-size: 5rem;
+    }
+}

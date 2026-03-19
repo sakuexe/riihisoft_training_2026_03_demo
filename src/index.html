@@ -1,16 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Riihisoft AI Optimization - eCommerce Demo</title>
-    <link href="/css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Hello world</h1>
-    <p>Riihisoft Oy</p>
-    <a href="/" class="button primary">Home</a>
-    <a href="/" class="button secondary">Contact</a>
-    <a href="/" class="button link">Read more</a>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riihisoft Training Demo - 2026/03</title>
+  <link href="/css/style.css" rel="stylesheet">
+  <style>
+    :root {
+      --panel: #111827;
+      --panel-2: #1f2937;
+      --accent: #22c55e;
+      --accent-2: #16a34a;
+    }
+
+    .section, section {
+      padding: 4.5rem 0;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      margin: 0 0 0.75rem;
+    }
+
+    .section-copy {
+      color: var(--color-text-muted);
+      margin: 0 0 2rem;
+      max-width: 70ch;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <a href="#top" class="brand">
+        <img src="/images/riihisoft_logo_no_text.png" alt="" width="32" height="37">
+        Riihi<span>DMA</span>tics
+      </a>
+      <ul aria-label="Primary navigation">
+        <li>
+          <a href="#products">Products</a>
+        </li>
+        <li>
+          <a href="#why">Why Socks?</a>
+        </li>
+        <li>
+          <a href="#compare">Compare</a>
+        </li>
+        <li>
+          <a href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <section id="hero" class="container">
+      <div>
+        <div class="badge">Trusted by 10,000+ slightly more confident developers</div>
+        <h1>Programming enhancing socks</h1>
+        <p>For cleaner code and warmer feet</p>
+        <p>
+          ByteSocks makes premium socks engineered for late-night debugging, suspicious merge conflicts,
+          and caffeine-powered feature launches. They may not actually improve your code, but morale goes up fast.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#products">Shop Socks</a>
+          <a class="button secondary" href="#why">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="sock-visual" aria-hidden="true">🧦</div>
+        <p style="margin: 1rem 0 0; color: var(--color-text-muted);">
+          Featuring soft cotton, terminal-inspired patterns, and a 99.9% chance of making you feel like shipping on
+          Friday was a good idea.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <h2 class="section-title">Popular Sock Drops</h2>
+        <p class="section-copy">A tiny product grid with our best fictional sellers.</p>
+
+        <div class="products">
+          <article>
+            <a href="/">
+              <div class="card-media" aria-hidden="true">⌨️</div>
+              <div class="card-body">
+                <h3>Rubber Duck Debuggers</h3>
+                <span class="price">14.99 &euro;</span>
+              </div>
+            </a>
+          </article>
+
+          <article>
+            <a href="/">
+              <div class="card-media" aria-hidden="true">{ }</div>
+              <div class="card-body">
+                <h3>Curly Brace Classics</h3>
+                <span class="price">16.99 &euro;</span>
+              </div>
+            </a>
+          </article>
+
+          <article>
+            <a href="/">
+              <div class="card-media" aria-hidden="true">⚡</div>
+              <div class="card-body">
+                <h3>Hotfix Express</h3>
+                <span class="price">18.99 &euro;</span>
+              </div>
+            </a>
+          </article>
+
+          <article>
+            <a href="/">
+              <div class="card-media" aria-hidden="true">🌙</div>
+              <div class="card-body">
+                <h3>Midnight Commit Edition</h3>
+                <span class="price">19.99 &euro;</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="container">
+      <h2 class="section-title">Why would socks help programming?</h2>
+      <p class="section-copy">Scientifically unverified. Emotionally compelling.</p>
+
+      <div class="explain">
+
+        <div class="panel">
+          <h3>Comfort improves focus</h3>
+          <p>
+            ByteSocks are made for desk life: soft fabric, breathable knit, and enough stretch to survive long
+            sessions of typing, pacing, and staring at stack traces.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Fun gear makes work better</h3>
+          <p>
+            Great developer tools matter, but so does personality. These socks add a small bit of joy to remote
+            calls,
+            office days, hackathons, and gift exchanges.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="compare" class="container">
+      <h2 class="section-title">Quick comparison</h2>
+      <p class="section-copy">A simple list comparing ordinary socks with programming enhancing socks.</p>
+
+      <ul class="compare-list">
+        <li>
+          <strong>Regular socks</strong>
+          <span>Keep feet warm. Usually contain no references to APIs, commits, or semicolons.</span>
+        </li>
+        <li>
+          <strong>ByteSocks</strong>
+          <span>Keep feet warm while also signaling elite taste in niche developer apparel.</span>
+        </li>
+        <li>
+          <strong>Office vibe</strong>
+          <span>Regular socks are neutral. ByteSocks are conversation starters during coffee breaks and sprint
+            planning.</span>
+        </li>
+        <li>
+          <strong>Giftability</strong>
+          <span>Regular socks are safe. ByteSocks are memorable gifts for engineers, students, and tech
+            teams.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="faq" class="container">
+      <h2 class="section-title">FAQ</h2>
+      <p class="section-copy">Everything you were too embarrassed to ask about code socks.</p>
+
+      <div>
+        <details>
+          <summary>Do these socks actually improve programming skill?</summary>
+          <p>No. They improve vibes, confidence, and possibly your willingness to tackle legacy code.</p>
+        </details>
+        <details>
+          <summary>Are they good as gifts?</summary>
+          <p>Yes. They work especially well for software developers, computer science students, and anyone who owns
+            more than one mechanical keyboard.</p>
+        </details>
+        <details>
+          <summary>What sizes do you offer?</summary>
+          <p>This demo site pretends to offer sizes S, M, L, and “one more coffee.”</p>
+        </details>
+        <details>
+          <summary>Can I wear them during deploys?</summary>
+          <p>Absolutely. Especially recommended during deploys, retro meetings, and bug triage.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>RiihiDMAtics</strong><br />
+        Programming enhancing socks for every stack.
+      </div>
+      <div>
+        &copy; 2026 Riihisoft · saku.karttunen@riihisoft.fi · Yabbadabadooo
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

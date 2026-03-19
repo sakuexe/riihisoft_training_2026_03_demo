@@ -1,0 +1,23 @@
+#compare {
+    .compare-list {
+        display: grid;
+        gap: 1rem;
+        padding: 0;
+        list-style: none;
+    }
+
+    .compare-list li {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 1rem;
+        padding: 1rem 1.1rem;
+        border: 1px solid var(--color-border);
+        border-radius: 14px;
+    }
+
+    .compare-list strong {
+        background: var(--gradient-brand);
+        background-clip: text;
+        color: transparent;
+    }
+}
