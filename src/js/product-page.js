@@ -45,3 +45,4 @@ breadcrumb.innerText = currentProduct.name;
 title.innerText = currentProduct.name;
 price.innerHTML = `${currentProduct.price} &euro;`;
 image.src = `./images/${currentProduct.image}`;
+image.dataset.productId = id.toString();
