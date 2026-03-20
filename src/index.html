@@ -6,31 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Riihisoft Training Demo - 2026/03</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/main.js" type="module" blocking="render"></script>
 </head>
 
 <body>
-  <nav>
-    <div class="container">
-      <a href="#top" class="brand">
-        <img src="./images/riihisoft_logo_no_text.png" alt="" width="32" height="37">
-        Riihi<span>Shop</span>
-      </a>
-      <ul aria-label="Primary navigation">
-        <li>
-          <a href="#products">Products</a>
-        </li>
-        <li>
-          <a href="#why">Why Socks?</a>
-        </li>
-        <li>
-          <a href="#compare">Compare</a>
-        </li>
-        <li>
-          <a href="#faq">FAQ</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <rs-nav></rs-nav>
 
   <main id="top">
 
@@ -66,7 +46,7 @@
 
       <div class="products">
         <article>
-          <a href="/">
+          <a href="./product-1">
             <div class="card-media" aria-hidden="true">⌨️</div>
             <div class="card-body">
               <h3>Rubber Duck Debuggers</h3>
@@ -185,17 +165,7 @@
     </section>
   </main>
 
-  <footer id="footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Riihishop</strong><br />
-        Programming enhancing socks for every stack.
-      </div>
-      <div>
-        &copy; 2026 Riihisoft · saku.karttunen@riihisoft.fi · Yabbadabadooo
-      </div>
-    </div>
-  </footer>
+  <rs-footer></rs-footer>
 </body>
 
 </html>

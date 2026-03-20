@@ -3,13 +3,11 @@
 @import url("./theme.css") layer(theme);
 
 @import url("./buttons.css") layer(components);
-@import url("./nav.css") layer(components);
 @import url("./hero.css") layer(components);
 @import url("./products.css") layer(components);
 @import url("./why.css") layer(components);
 @import url("./comparison.css") layer(components);
 @import url("./faq.css") layer(components);
-@import url("./footer.css") layer(components);
 
 .container {
     width: min(100% - 2rem, 1200px);
