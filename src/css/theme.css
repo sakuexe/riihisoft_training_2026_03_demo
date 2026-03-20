@@ -16,14 +16,14 @@
     /* --color-brand: oklch(0.7 25% 147); */
 
     /* @media (prefers-color-scheme: light) { } */
-    --color-bg: oklch(from var(--color-brand) 98% calc(c * 0.08) h);
-    --color-fg: oklch(from var(--color-brand) 98% calc(c * 0.15) h);
+    --color-bg: oklch(from var(--color-brand) 95% calc(c * 0.12) h);
+    --color-fg: oklch(from var(--color-brand) 97% calc(c * 0.12) h);
     --color-border: oklch(from var(--color-brand) 85% calc(c * 0.15) h);
     --color-text: oklch(from var(--color-brand) 22% calc(c * 0.25) h);
     --color-text-muted: oklch(from var(--color-brand) 22% calc(c * 0.25) h / 0.75);
 
-    --gradient-start: oklch(from var(--color-brand) l c h);
-    --gradient-end: oklch(from var(--color-brand) l c calc(h + 60));
+    --gradient-start: oklch(from var(--color-brand) calc(l * 1.5) 10% h);
+    --gradient-end: oklch(from var(--color-brand) calc(l * 1.25) c calc(h + 60));
     --gradient-primary: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
 
     @media (prefers-color-scheme: dark) {

@@ -43,5 +43,5 @@ const currentProduct = products[id - 1];
 
 breadcrumb.innerText = currentProduct.name;
 title.innerText = currentProduct.name;
-price.innerText = currentProduct.price.toString();
+price.innerHTML = `${currentProduct.price} &euro;`;
 image.src = `./images/${currentProduct.image}`;

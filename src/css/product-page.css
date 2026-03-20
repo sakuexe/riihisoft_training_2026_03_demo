@@ -27,11 +27,13 @@ main {
     margin: 0;
     display: grid;
     place-items: center;
+    height: 800px;
 
     img {
         object-fit: contain;
         width: 80%;
         height: 80%;
+        contain: size;
     }
 }
 

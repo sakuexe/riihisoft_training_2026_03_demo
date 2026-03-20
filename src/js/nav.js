@@ -40,6 +40,8 @@ class RiihisoftNavigation extends HTMLElement {
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
+          width: min(100% - 2rem, 1200px);
+          margin-inline: auto;
         }
 
         .brand {
@@ -85,7 +87,7 @@ class RiihisoftNavigation extends HTMLElement {
       </style>
 
       <nav>
-        <div class="container">
+        <div>
           <a href="../#top" class="brand">
             <img src="./images/riihisoft_logo_no_text.png" alt="RiihiShop logo" width="32" height="37">
             Riihi<span>Beans</span>
