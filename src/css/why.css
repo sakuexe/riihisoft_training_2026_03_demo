@@ -9,6 +9,7 @@
         border: 1px solid var(--color-border);
         border-radius: var(--border-radius);
         padding: var(--spacing-lg);
+        background-color: var(--color-fg);
         
         &>*:not(:last-child) {
             margin-bottom: var(--spacing-sm);

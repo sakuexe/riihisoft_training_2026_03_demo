@@ -18,9 +18,13 @@
     /* @media (prefers-color-scheme: light) { } */
     --color-bg: oklch(from var(--color-brand) 98% calc(c * 0.08) h);
     --color-fg: oklch(from var(--color-brand) 98% calc(c * 0.15) h);
-    --color-border: oklch(from var(--color-brand) 98% calc(c * 0.15) h);
+    --color-border: oklch(from var(--color-brand) 85% calc(c * 0.15) h);
     --color-text: oklch(from var(--color-brand) 22% calc(c * 0.25) h);
     --color-text-muted: oklch(from var(--color-brand) 22% calc(c * 0.25) h / 0.75);
+
+    --gradient-start: oklch(from var(--color-brand) l c h);
+    --gradient-end: oklch(from var(--color-brand) l c calc(h + 60));
+    --gradient-primary: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
 
     @media (prefers-color-scheme: dark) {
         --color-bg: oklch(from var(--color-brand) 16% calc(c * 0.35) h);
@@ -28,11 +32,12 @@
         --color-border: oklch(from var(--color-brand) 45% calc(c * 0.45) h);
         --color-text: oklch(from var(--color-brand) 96% calc(c * 0.06) h);
         --color-text-muted: oklch(from var(--color-brand) 70% calc(c * 0.06) h);
+
+        --gradient-start: oklch(from var(--color-fg) l c h);
+        --gradient-end: oklch(from var(--color-bg) l c calc(h + 60));
+        --gradient-primary: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     }
 
-    --gradient-start: oklch(from var(--color-fg) l c h);
-    --gradient-end: oklch(from var(--color-bg) l c calc(h + 60));
-    --gradient-primary: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
 
     --gradient-brand: linear-gradient(135deg, var(--color-brand), oklch(from var(--color-brand) l c calc(h + 180)));
 

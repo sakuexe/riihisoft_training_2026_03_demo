@@ -31,6 +31,7 @@
         display: flex;
         justify-content: space-between;
         border-block-start: 1px solid var(--color-border);
+        background-color: var(--color-fg);
     }
 
     h3 {

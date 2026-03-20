@@ -19,3 +19,20 @@
 main {
     container: --main / inline-size;
 }
+
+main>section {
+    padding: 4.5rem 0;
+}
+
+hgroup h2 {
+    margin: 0;
+    margin-block-end: var(--spacing-sm);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+hgroup p {
+    margin: 0;
+    margin-block-end: var(--spacing-xl);
+    color: var(--color-text-muted);
+    max-width: 70ch;
+}
