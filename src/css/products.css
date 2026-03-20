@@ -32,13 +32,21 @@
         }
     }
 
-    .card-media {
-        min-height: 160px;
-        display: grid;
-        place-items: center;
-        font-size: 3rem;
+    figure {
         background: var(--gradient-primary);
         flex-grow: 1;
+        margin: 0;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+            object-position: center;
+        }
     }
 
     .card-body {
