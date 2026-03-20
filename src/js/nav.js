@@ -88,7 +88,7 @@ class RiihisoftNavigation extends HTMLElement {
         <div class="container">
           <a href="../#top" class="brand">
             <img src="./images/riihisoft_logo_no_text.png" alt="RiihiShop logo" width="32" height="37">
-            Riihi<span>Shop</span>
+            Riihi<span>Beans</span>
           </a>
           <ul>
             <li><a href="index.html#products">Products</a></li>

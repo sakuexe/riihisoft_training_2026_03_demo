@@ -18,7 +18,7 @@ main {
     container: --main / inline-size;
 }
 
-main>section {
+main>section:not(.no-padding) {
     padding: 4.5rem 0;
 }
 

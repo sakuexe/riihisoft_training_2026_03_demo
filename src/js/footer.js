@@ -46,8 +46,8 @@ class RiihisoftFooter extends HTMLElement {
       <footer id="footer">
         <div>
           <div>
-            <strong>Riihishop</strong><br />
-            Programming enhancing socks for every stack.
+            <strong>RiihiBeans</strong><br />
+            Programming enhancing beans for every variant of the cloud.
           </div>
           <div>
             &copy; 2026 Riihisoft · Gia Matikainen · Saku Karttunen
