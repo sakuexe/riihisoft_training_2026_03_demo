@@ -1,0 +1,17 @@
+.help-button {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+}
+
+.tooltip {
+    margin-block-end: var(--spacing-xs);
+
+    max-inline-size: 24ch;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    line-height: 1.5;
+}

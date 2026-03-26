@@ -7,6 +7,7 @@
   <title>Riihisoft Training Demo - 2026/03</title>
   <link href="css/style.css" rel="stylesheet">
   <script src="js/main.js" type="module" blocking="render"></script>
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
 </head>
 
 <body>
@@ -20,6 +21,7 @@
         <div class="badge">Trusted by 10,000+ slightly more confident developers</div>
         <h1>Programming-enhancing coffee beans</h1>
         <p>For cleaner code and brighter mornings</p>
+
         <p>
           RiihiBeans roasts premium coffee beans engineered for late-night debugging, suspicious merge conflicts,
           and caffeine-powered feature launches. They may not actually improve your code, but morale goes up fast.
@@ -27,7 +29,29 @@
 
         <div class="hero-actions">
           <a class="button primary" href="#products">Shop Beans</a>
-          <a class="button secondary" href="#why">Learn More</a>
+          <button popovertarget="menu" class="button secondary">Health warnings</button>
+
+          <!-- tooltip
+          <button class="icon-button help-button" aria-describedby="tip-save">
+              🛈
+          </button>
+          <div id="tip-save" role="tooltip" class="tooltip">
+              Cleaner code <strong>might</strong> include inline !importants
+          </div> -->
+
+        </div>
+
+        <div id="menu" popover class="popover-menu">
+          <p>
+            These beans will make you into a 10x programmer for at least 30 minutes.
+            Consume with care!
+          </p>
+          <div>
+            <button type="button" class="button primary">I agree</button>
+            <button type="button" class="button secondary" popovertarget="menu" popovertargetaction="hide">
+              I am scared!
+            </button>
+          </div>
         </div>
       </div>
 

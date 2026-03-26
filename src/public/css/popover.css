@@ -1,0 +1,18 @@
+.popover-menu {
+    margin: 0;
+    padding: var(--spacing-xl);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg);
+}
+
+.popover-menu > div:has(button) {
+    display: flex;
+    gap: var(--spacing-xs);
+    flex-wrap: wrap;
+
+    > button {
+        min-width: fit-content;
+        flex: 1;
+    }
+}

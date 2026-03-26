@@ -8,7 +8,13 @@
 @import url("./why.css") layer(components);
 @import url("./comparison.css") layer(components);
 @import url("./faq.css") layer(components);
+
+/* workshop parts */
 @import url("./viewtransitions.css") layer(theme);
+@import url("./scrollanimations.css") layer(components);
+@import url("./details.css") layer(components);
+@import url("./popover.css") layer(components);
+@import url("./tooltip.css") layer(components);
 
 .container {
     width: min(100% - 2rem, 1200px);
@@ -21,6 +27,10 @@ main {
 
 main>section:not(.no-padding) {
     padding: 4.5rem 0;
+}
+
+h1, h2, h3 {
+    /* something here?? */
 }
 
 hgroup h2 {
